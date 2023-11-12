@@ -1,40 +1,39 @@
 body {
-    background: #000; /* Black background */
-    color: #fff; /* White text color */
-    font-family: "Roboto", sans-serif;
+    background: rgba(105, 159, 163, 0.97);
+    color: #fff; 
+    font-family: "Poppins";
   }
   
   .weather-app {
     background: #111; /* Dark gray background */
-    max-width: 600px;
-    margin: 60px auto;
+    margin: 100px auto;
+    width: 650px;
+    height: 400px;
+    flex-shrink: 0;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  header {
-    border-bottom: 1px solid #444; /* Dark gray border color */
-    padding-bottom: 20px;
+    border-radius: 32px;
+    background: linear-gradient(113deg, #2AD4CA 32.23%, #333 67.37%);
   }
   
   .search-input,
   .search-button {
-    background-color: #222; /* Dark background for input and button */
-    color: #fff;
     border: none;
     border-radius: 6px;
   }
   
   .search-input {
+    background-color: #fff; 
     padding: 15px;
-    width: 70%;
+    width: 80%;
+    opacity: 0.7;
   }
   
   .search-button {
-    margin-left: 5px;
+    margin-left: 15px;
     padding: 15px;
     cursor: pointer;
+    background-color: #2AD4CA ;
+    color: #111;
   }
   
   main {
@@ -42,8 +41,14 @@ body {
   }
   
   .current-temperature {
-    font-size: 48px;
-    color: #fff;
+    color: #F2F1F1;
+    font-family: Poppins;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    position: relative;
+    margin-left: 200px;
   }
   
   .current-weather {
@@ -52,19 +57,28 @@ body {
   }
   
   .current-city {
-    font-size: 38px;
-    font-weight: 900;
-    margin: 0;
+    color: rgba(255, 255, 255, 0.97);
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
   }
   
   .current-details {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    display: flex;
+  }
+
+  .details{
+    visibility: hidden;
   }
   
-  .current-details strong {
+  .current-details {
     color: #f65282;
+    font-family: Poppins;
   }
   
   .current-temperature-value {
@@ -84,3 +98,12 @@ body {
     padding-top: 15px;
   }
   
+  #current-date{
+    color: rgba(255, 255, 255, 0.97);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
